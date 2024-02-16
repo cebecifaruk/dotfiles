@@ -22,6 +22,9 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
 
   // User Interface
   "breadcrumbs.enabled": true,

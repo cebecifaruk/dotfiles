@@ -1,3 +1,9 @@
+# Load profile
+source $HOME/.profile
+
+# Load aliases
+source $HOME/.aliases
+
 # ZSH Completions
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -52,10 +58,3 @@ fi
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 test -e $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
-
-
-# Load profile
-source $HOME/.profile
-
-# Load aliases
-source $HOME/.aliases

@@ -1,0 +1,12 @@
+alias tlsclient="openssl s_client -connect"
+alias ssh-clean-known-hosts="rm ~/.ssh/known_hosts"
+alias isodate="date +\"%Y-%m-%dT%H:%M:%S%z\""
+alias ldd="otool -L"
+alias aws-select-credentials='f() { export AWS_DEFAULT_PROFILE=$1; export AWS_PROFILE=$1 };f'
+alias k="kubectl"
+alias g="git"
+alias kns="kubens"
+alias kctx="kubectx"
+alias dnsflush="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias docker-kill-all="docker ps -q | xargs docker kill"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'

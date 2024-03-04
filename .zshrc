@@ -13,7 +13,7 @@ if type brew &>/dev/null; then
 fi
 
 # ZSH Autosuggestions
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ZSH Syntax Highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -40,6 +40,8 @@ setopt no_share_history
 
 bindkey "^[b" backward-word     # ⌥←
 bindkey "^[f" forward-word      # ⌥→
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
 
 # History Navigation
 autoload -U history-search-end
@@ -58,3 +60,4 @@ fi
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 test -e $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
+

@@ -2,12 +2,13 @@
 alias d='docker'
 alias c='config'
 alias b='brew'
-alias g="git"
+alias g='git'
 alias k='kubectl'
+alias v='vim'
 
 # Kubernetes
-alias kns="kubens"
-alias kctx="kubectx"
+alias kns='kubens'
+alias kctx='kubectx'
 
 # MacOS
 alias ldd="otool -L"
@@ -17,7 +18,6 @@ alias dnsflush="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias aws-select-credentials='f() { export AWS_DEFAULT_PROFILE=$1; export AWS_PROFILE=$1 };f'
 
 # Others
-alias tlsclient="openssl s_client -connect"
 alias ssh-clean-known-hosts="rm ~/.ssh/known_hosts"
 alias isodate="date +\"%Y-%m-%dT%H:%M:%S%z\""
 alias docker-kill-all="docker ps -q | xargs docker kill"

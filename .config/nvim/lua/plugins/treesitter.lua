@@ -1,4 +1,4 @@
-return { 
+return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
@@ -7,15 +7,19 @@ return {
         "c", "cpp", "make",
         "dart",
         "gitattributes", "gitignore",
-        "go", "gomod", "gowork", 
+        "go", "gomod", "gowork",
         "haskell",
-        "html", "css", "javascript", "typescript", "jq", "json", "json5", "php", 
+        "html", "css", "javascript", "typescript", "jq", "json", "json5", "php",
         "lua",
-        "rust"
+        "rust",
+        "python",
+        "yaml",
+        "toml",
+        "bash", "fish",
       },
       sync_install = false,
       highlight = { enable = true },
-      indent = { enable = true },  
+      indent = { enable = true },
     })
   end
 }

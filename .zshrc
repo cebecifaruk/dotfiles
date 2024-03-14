@@ -31,8 +31,8 @@ zstyle ':vcs_info:git:*' formats "↣ %b "
 setopt PROMPT_SUBST
 local prompt_lambda="%(?.%F{green}λ.%F{red}λ)%f"
 local prompt_dir="%F{cyan}%.%f"
-local prompt_seperator="%F{magenta}»%f"
-PROMPT='%B${prompt_lambda}  ${prompt_dir} %F{red}${vcs_info_msg_0_}%f${prompt_seperator} %b'
+local prompt_separator="%F{magenta}»%f"
+PROMPT='%B${prompt_lambda}  ${prompt_dir} %F{red}${vcs_info_msg_0_}%f${prompt_separator} %b'
 
 # History Options
 unsetopt share_history

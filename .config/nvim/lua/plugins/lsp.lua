@@ -21,9 +21,7 @@ return {
             "gopls",
             "grammarly",
             "html",
-            -- "hls",
             "jsonls",
-            -- "java_language_server",
             "tsserver",
             "jqls",
             "lua_ls",
@@ -54,9 +52,7 @@ return {
     lspconfig.gopls.setup({})
     lspconfig.grammarly.setup({})
     lspconfig.html.setup({})
-    -- lspconfig.hls.setup({})
     lspconfig.jsonls.setup({})
-    -- lspconfig.java_language_server.setup({})
     lspconfig.tsserver.setup({})
     lspconfig.jqls.setup({})
     lspconfig.lua_ls.setup({})

@@ -67,3 +67,6 @@ bindkey "^[b" backward-word     # ⌥←
 bindkey "^[f" forward-word      # ⌥→
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+
+# bun completions
+[ -s "/Users/cebecifaruk/.bun/_bun" ] && source "/Users/cebecifaruk/.bun/_bun"

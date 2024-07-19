@@ -17,6 +17,7 @@
 [core]
 	autocrlf = input
 	pager = diff-so-fancy | less --tabs=4 -RF
+	ignorecase = false
 
 [http]
 	postBuffer = 524288000

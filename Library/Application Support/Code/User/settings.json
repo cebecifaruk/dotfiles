@@ -38,7 +38,6 @@
   "workbench.startupEditor": "none",
   "window.commandCenter": true,
   "window.restoreFullscreen": true,
-  "window.newWindowDimensions": "fullscreen",
   "window.restoreWindows": "all",
   "window.customTitleBarVisibility": "windowed",
   "window.titleBarStyle": "custom",
@@ -56,7 +55,12 @@
 
   // Github
   "githubPullRequests.pullBranch": "never",
-  "github.copilot.enable": { "*": true },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": true,
 
@@ -89,7 +93,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[handlebars]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.formatOnSave": true,
@@ -141,5 +145,29 @@
   "redhat.telemetry.enabled": false,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.olean": true,
+    "**/.jekyll-cache": true,
+    "**/_site": true
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
   }
 }
